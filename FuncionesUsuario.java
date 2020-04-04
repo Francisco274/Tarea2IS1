@@ -23,4 +23,8 @@ public class FuncionesUsuario {
         return retorno * descuento;
     }
 
+    public void cobroSueldo(int sueldo, Usuario usuario){
+        usuario.setSaldo(sueldo + usuario.getSaldo());
+    }
+
 }
