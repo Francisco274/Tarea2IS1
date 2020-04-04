@@ -58,5 +58,19 @@ public class Usuario{
     public void setSaldo(int saldo){
         this.saldo = saldo;
     }
+    
+    @Override
+    public boolean equals(Object o){
+    
+    if(o == this){
+        return true;
+    }
+    if(!(o instanceof Usuario)){
+        return false;
+    }
+    Usuario u = (Usuario) o;
+    return this.cedula == u.cedula;
+
+    }
 
 }
